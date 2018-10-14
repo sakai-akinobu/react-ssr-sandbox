@@ -11,7 +11,9 @@ export default class App extends React.Component {
     this.incrementCounter = this.incrementCounter.bind(this);
     this.decrementCounter = this.decrementCounter.bind(this);
 
-    this.state = {counter: 0};
+    this.state = {
+      counter: props.counter,
+    };
   }
 
   incrementCounter() {
