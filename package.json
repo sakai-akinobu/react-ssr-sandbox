@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "npx babel-node ./src/server/index.js"
+    "build": "npx webpack --config webpack.config.js",
+    "server": "node ./public/server.js"
   },
   "author": "Akinobu SAKAI <sakai.akinobu@gmail.com> (https://github.com/sakai-akinobu)",
   "license": "MIT",
