@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Html(props) {
+export default function Html(props) {
   return (
     <html>
       <body>
