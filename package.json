@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "node ./src/server/index.js"
+    "server": "npx babel-node ./src/server/index.js"
   },
   "author": "Akinobu SAKAI <sakai.akinobu@gmail.com> (https://github.com/sakai-akinobu)",
   "license": "MIT",
