@@ -14,6 +14,7 @@ server.get('/', (req, res) => {
     </Html>
   ).pipe(res);
 });
+server.use(express.static('public'));
 
 const PORT = 3000;
 server.listen(PORT);
