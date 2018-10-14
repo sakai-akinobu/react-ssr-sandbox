@@ -1,9 +1,18 @@
 import express from 'express';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+
+import Html from '../components/Html';
+import App from '../components/App';
 
 const server = express();
 
 server.get('/', (req, res) => {
-  res.send({});
+  ReactDOMServer.renderToNodeStream(
+    <Html>
+      <App />
+    </Html>
+  ).pipe(res);
 });
 
 const PORT = 3000;
