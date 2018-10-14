@@ -4,6 +4,7 @@ module.exports = {
   mode: 'development',
   target: 'node',
   entry: {
+    client: path.resolve(__dirname, 'src/client/index.js'),
     server: path.resolve(__dirname, 'src/server/index.js'),
   },
   output: {
